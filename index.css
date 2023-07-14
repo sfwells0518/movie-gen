@@ -2,10 +2,11 @@
   --white: #ffffff;
   --light: whitesmoke;
   --light-grey: #e8e8e8;
-  --pink: #ff176b;
+  --yellow: #fbdc9e;
+  --dark-yellow: #bea677;
   --medium-dark: #777;
   --dark: #242526;
-  --border-rad-lg: 15px;
+  --border-rad-lg: 7px;
 }
 
 html,
@@ -19,7 +20,7 @@ body {
   font-family: 'Poppins';
   background-size: cover;
   background-repeat: repeat-y;
-  background-image: url('images/moviepitchbg-dark.jpg');
+  background-image: url('public/movie_theater.png');
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -195,15 +196,14 @@ textarea::placeholder {
       Buttons & SVG 
      ================= */
 
-
 button {
   border: none;
-  background: var(--pink);
+  background: var(--yellow);
   cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--dark);
+  background: var(--dark-yellow);
 }
 
 .send-btn {
