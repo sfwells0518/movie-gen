@@ -1,4 +1,4 @@
-const apiKey = "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";
+const apiKey = "";
 
 const url = "https://api.openai.com/v1/completions"; 
 
