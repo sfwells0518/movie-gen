@@ -1,12 +1,10 @@
-const apiKey = "";
-
 const url = "https://api.openai.com/v1/completions"; 
 
 fetch(url, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${apiKey}`
+    'Authorization': `Bearer ${import.meta.env.VITE_OpenAI_API_KEY}`
   },
   body: JSON.stringify({
     'model': 'text-davinci-003',
