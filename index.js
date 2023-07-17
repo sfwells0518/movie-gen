@@ -9,7 +9,7 @@ document.getElementById("send-btn").addEventListener("click", () => {
     setupInputContainer.innerHTML = `<img src="public/loading.svg" class="loading" id="loading">`;
     movieBossText.innerText = `Ok, just wait a second while my digital brain digests that...`;
   // }
-  fetchBotReply()
+  fetchBotReply();
 });
 
 function fetchBotReply() {
