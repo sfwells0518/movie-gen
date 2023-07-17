@@ -8,6 +8,6 @@ fetch(url, {
   },
   body: JSON.stringify({
     'model': 'text-davinci-003',
-    'prompt': 'Sound sympathetic in five words or less.'
+    'prompt': 'Sound enthusiastic in five words or less.'
   })
 }).then(response => response.json()).then(data => console.log(data))
