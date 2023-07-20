@@ -134,4 +134,10 @@ async function fetchImageUrl(imagePrompt) {
     response_format: "b64_json"
   });
   document.getElementById("output-img-container").innerHTML = `<img src="data:image/png;base64,${response.data.data[0].b64_json}">`; 
+  setupInputContainer.innerHTML = `<button id="view-pitch-btn" class="view-pitch-btn">View Pitch</button>`;
+  document.getElementById("view-pitch-btn").addEventListener("click", () => {
+    document.getElementById("setup-container").style.display = "none";
+    document.getElementById("output-container").style.display = "flex";
+    movieBossText.innerText = `This idea is so good, I'm jealous! It's going to make you rich for sure, but remember, I want 10% 💰!`;
+  });
 }
